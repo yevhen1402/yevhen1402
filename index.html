@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Название сайта</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Продукты и услуги</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <h1>Добро пожаловать на сайт</h1>
+        <p>Краткое описание компании</p>
+        <a class="cta" href="#">Связаться с нами</a>
+      </section>
+      <section class="about-section">
+        <h2>О компании</h2>
+        <p>Подробное описание компании</p>
+      </section>
+      <section class="products-section">
+        <h2>Продукты и услуги</h2>
+        <div class="product">
+          <h3>Название продукта или услуги 1</h3>
+          <p>Краткое описание продукта или услуги 1</p>
+        </div>
+        <div class="product">
+          <h3>Название продукта или услуги 2</h3>
+          <p>Краткое описание продукта или услуги 2</p>
+        </div>
+      </section>
+      <section class="contact-section">
+        <h2>Контакты</h2>
+        <form>
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Электронная почта</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Компания © 2021</p>
+    </footer>
+  </body>
+</html>
+
+
+CSS:
+
+/* Общие стили */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Стили для header и навигации */
+
+header {
+  background-color: #efefef;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Стили для секций */
+
+.hero-section {
+  background-color: #eee;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero-section h1 {
+  font-size: 2em;
+}
+
+.cta {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: #444;
+}
+
+.about-section h2, .products-section h2, .contact-section h2 {
+  text-align: center;
+  padding: 50px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Стили для формы обратной связи */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  margin: 20px 0 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #444;
+}
+
+/* Стили для footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+ 
